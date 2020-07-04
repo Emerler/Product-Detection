@@ -51,7 +51,7 @@ def get_model():
 
 def get_set():
     train_path = r'C:\Users\Emerl2\shopee-product-detection-student\train\train\train\\'
-    test_path = r'C:\Users\Emerl2\shopee-product-detection-student\test\test\test\\'
+    test_path = r'C:\Users\Emerl2\shopee-product-detection-student\test\test'
 
     train_gen = ImageDataGenerator(rescale=1./255, validation_split=3007./105390)
     train_set = train_gen.flow_from_directory(train_path, target_size=IMAGE_SIZE, \
